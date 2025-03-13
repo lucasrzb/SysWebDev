@@ -1,0 +1,363 @@
+.container-mobile input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .container-desktop input[type="tel"]{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .container-mobile {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Largura para o mobile */
+    margin: 0 auto; /* Centraliza na tela */
+    display: none; /* Esconde o formulário no desktop */
+  }
+  
+  .titulo-desktop { /* Estilos para o h2 no desktop */
+    color: #5e35b1;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Rubik', sans-serif; /* Fonte para o desktop */
+  }
+  
+  .titulo-mobile { /* Estilos para o h2 no mobile */
+    color: #5e35b1;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Rubik', sans-serif; /* Fonte para o mobile */
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .botao-enviar { /* Estilos para o botão */
+    background: linear-gradient(45deg, #40068b, #0d0d0e);
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transição suave para todas as propriedades */
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao botão */
+  }  
+  
+  .botao-enviar:hover{
+    background: linear-gradient(45deg, #0d0d0e, #40068b);
+  }
+ 
+  
+  .success-message {
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+  }
+  
+  /* Media Query para telas menores que 768px (mobile) */
+  @media (max-width: 768px) {
+    .container-desktop {
+      display: none; /* Esconde o formulário para desktop */
+    }
+    .container-mobile {
+      display: block; /* Exibe o formulário para mobile */
+    }
+  }
+/*WHATSAPP BOTAO*/
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(45deg, #40068b, #0d0d0e);
+    color: white !important;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
+.whatsapp-btn i {
+    font-size: 18px;
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.25);
+    background: linear-gradient(45deg, #0d0d0e, #40068b);
+    color: white !important;
+    text-decoration: none;
+}
+
+.whatsapp-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(#40068b);
+}
+
+#FaleConosco {
+    padding: 100px 0 60px;
+    margin: 0;
+    position: relative;
+}
+
+.botao-enviar:hover {
+    background: linear-gradient(45deg, #0d0d0e, #40068b);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.botao-enviar:active {
+    transform: translateY(0);
+}
+
+.botao-enviar.sending {
+    pointer-events: none;
+    background: none;
+}
+
+.botao-enviar.sending::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: 50%;
+    margin-left: -12px;
+    margin-top: -12px;
+    border: 2px solid rgba(111, 66, 193, 0.2);
+    border-top-color: #6f42c1;
+    border-radius: 50%;
+    animation: button-loading-spinner 0.8s linear infinite;
+}
+
+.botao-enviar.success {
+    background: #28a745;
+    color: white;
+}
+
+.botao-enviar.success::before {
+    content: '✓';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+@keyframes button-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes success-scale {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    } }
+
+    .project-image{
+        background-color: none;
+        background: none;
+    }
+
+    .projects-section {
+      padding: 60px 0;
+  }
+  
+  .project-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+      transform: translateY(-50px); /* Ajuste a transformação para menos */
+      display: block;
+  }
+  .projects-subtitle{
+   font-size: 1.2rem;
+  }
+ #projects{
+    transform: translateY(-50px);
+ }
+ #projects-section{
+    transform: translateY(-40px);
+ }
+  
+  .project-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s; /* Transição suave */
+  }
+  
+  .project-card:hover {
+      transform: translateY(-10px); /* Eleva o cartão ao passar o mouse */
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+  }
+  
+  .project-image {
+      width: 100%;
+      height: auto;
+      border-bottom: 5px solid #fbfbfc; /* Borda inferior para destaque */
+  }
+  
+  .project-description {
+      padding: 20px; /* Aumenta o padding */
+display: block;
+  }
+  
+  .project-title {
+      font-size: 1.2rem; /* Aumenta o tamanho do título do projeto */
+      margin: 0;
+      color: #854fee; /* Cor do título */
+      
+
+  }
+  @media (max-width: 767px) {
+    .project-title {
+        font-size: 1.2rem; /* Tamanho menor do título em dispositivos móveis */
+    }
+  }
+  .project-text {
+      font-size: 1rem; /* Aumenta o tamanho do texto */
+      margin-bottom: 10px;
+      color: #555; /* Cor do texto */
+      text-align: center;  
+    }
+  
+  .project-tag {
+      display:flexbox;
+      margin-right: 5px;
+      font-size: 0.9rem;
+      color: #fff;
+      background: linear-gradient(45deg, #40068b, #0d0d0e); /* Fundo leve para as tags */
+      padding: 5px 10px; /* Padding nas tags */
+      border-radius: 5px; /* Bordas arredondadas */
+  }
+  
+  .project-button {
+      background: linear-gradient(45deg, #40068b, #0d0d0e);
+      color: white;
+      border: none;
+      padding: 12px 20px; /* Aumenta o padding para um botão mais confortável */
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 1rem; /* Tamanho da fonte do botão */
+      transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+      margin-top: 10px;
+      display: block;
+  }
+  
+  .project-button:hover {
+      background: linear-gradient(45deg, #0d0d0e, #40068b);
+      transform: translateY(-2px); /* Eleva o botão ao passar o mouse */
+      box-shadow: 0 5px 15px rgba(#0056b3);
+  }
+  .project-button:active {
+    box-shadow: 0 5px 15px rgba(#0056b3);
+  }
+ #services{
+   transform: translateY(40px);
+    font-size: 1.2rem;
+    margin: 0;
+    line-height: 1.2;
+
+ }
+ #zaption{
+    transform: translateY(30px);
+ }
+ #sobre{
+    transform: translateY(150px);
+ }
+ #sobre2{
+    transform: translateY(140px);
+ }
+ #sobre3{
+    transform: translateY(160px);
+ }
+ #estude{
+    transform: translateY(70px);
+ }
+ #soueu{
+    transform: translateY(70px);
+ }
+ @media (max-width: 768px) {
+    #sobre3 {
+        transform: translateY(40px); /* Ajuste os valores conforme necessário */
+    }
+}
+@media (max-width: 768px){
+    #sobre2{
+        transform: translateY(10px);
+    }
+}
+    @media (max-width: 768px){
+        #sobre{
+            transform: translateY(-20px);
+        }
+
+    }
+    @media (max-width: 768px){
+        #soueu{
+            transform: translateY(-50px);
+        }
+    }
+
+@media (max-width: 768px){
+    #estude{
+        transform: translateY(-50px);
+    }
+}
+@media (max-width: 768px){
+    #flex{
+        transform: translateY(-50px);
+    }
+}
+@media (max-width: 768px){
+     #zaption{
+        transform: translateY(-10px);
+     }
+}
+@media (max-width: 768px){
+    #services{
+        transform: translateY(-10px);
+    }
+}
+@media (max-width: 768px){
+    #project0{
+        transform: translateY(-20px);
+    }
+}
